@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="臺南市長公辦政見會兩場影片中，謝龍介與陳亭妃都談到的 8 個話題，每句附 YouTube 影片時間點連結。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="謝龍介與陳亭妃的共同話題">
+<meta property="og:description" content="臺南市長公辦政見會兩場影片中，謝龍介與陳亭妃都談到的 8 個話題，每句附 YouTube 影片時間點連結。">
+<meta property="og:url" content="https://maskywg.github.io/tainan-mayor-common-topics/">
+<meta property="og:image" content="https://maskywg.github.io/tainan-mayor-common-topics/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="謝龍介與陳亭妃的共同話題">
+<meta name="twitter:description" content="臺南市長公辦政見會兩場影片中，謝龍介與陳亭妃都談到的 8 個話題，每句附 YouTube 影片時間點連結。">
+<meta name="twitter:image" content="https://maskywg.github.io/tainan-mayor-common-topics/og.png">
+<title>謝龍介與陳亭妃共同話題對照</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap">
+<style>
+/* 版面概念：左右並排的對照表，兩位候選人各有一個固定色，每句話後面附影片時間點 */
+:root {
+  --bg: #f3f5f6; --card: #ffffff; --fg: #1c2429; --muted: #56636c; --line: #d8dee2;
+  --xie: #a85a08; --xie-bg: #fbf1e4; --chen: #3a4ba6; --chen-bg: #eaedfa;
+  --font-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-head: "Noto Serif TC", "PingFang TC", "Songti TC", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12171a; --card: #1a2126; --fg: #e8edf0; --muted: #9aa8b1; --line: #2c373e;
+  --xie: #e8a45a; --xie-bg: #2a2118; --chen: #94a3f0; --chen-bg: #1c2036; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #12171a; --card: #1a2126; --fg: #e8edf0; --muted: #9aa8b1; --line: #2c373e;
+  --xie: #e8a45a; --xie-bg: #2a2118; --chen: #94a3f0; --chen-bg: #1c2036; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.75;
+  padding-block: 28px 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1040px; margin: 0 auto; }
+header h1 { font-family: var(--font-head); font-size: clamp(1.7rem, 4.6vw, 2.5rem); line-height: 1.3; margin: 0 0 10px; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 62ch; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 16px; font-size: .92rem; }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.legend i, h3 i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.legend .a i, .xie h3 i { background: var(--xie); } .legend .b i, .chen h3 i { background: var(--chen); }
+.note { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 22px 0; font-size: .92rem; color: var(--muted); }
+.note b { color: var(--fg); }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+nav a { border: 1px solid var(--line); background: var(--card); color: var(--fg); text-decoration: none; padding: 5px 14px; border-radius: 999px; font-size: .9rem; }
+nav a:hover, nav a:focus-visible { border-color: var(--fg); outline: none; }
+section { margin-top: 46px; scroll-margin-top: 16px; }
+section h2 { font-family: var(--font-head); font-size: 1.5rem; margin: 0 0 6px; }
+.lead { margin: 0 0 16px; color: var(--muted); max-width: 66ch; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.who { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px 6px; min-width: 0; }
+.who h3 { margin: 0 0 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+.xie { border-top: 3px solid var(--xie); } .chen { border-top: 3px solid var(--chen); }
+ul { list-style: none; padding: 0; margin: 0; }
+li { padding: 12px 0; border-top: 1px solid var(--line); }
+li:first-child { border-top: 0; }
+li p { margin: 0 0 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: .8rem; line-height: 1; text-decoration: none; padding: 6px 10px; border-radius: 6px; display: inline-flex; gap: 6px; font-variant-numeric: tabular-nums; color: var(--fg); }
+.chip span { color: var(--muted); }
+.xie .chip { background: var(--xie-bg); } .chen .chip { background: var(--chen-bg); }
+.chip:hover, .chip:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; }
+footer { margin-top: 52px; border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: .88rem; }
+footer a { color: var(--fg); }
+@media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <h1>謝龍介與陳亭妃的共同話題</h1>
+  <p>臺南市長選舉公辦政見會的兩場影片，整理出兩位候選人都談到的 8 個話題。每一句後面的時間點，點下去會從影片該處開始播。</p>
+  <div class="legend"><span class="a"><i></i>謝龍介（2 號）</span><span class="b"><i></i>陳亭妃（3 號）</span></div>
+</header>
+
+<div class="note"><b>閱讀前請注意：</b>內容由影片語音自動辨識後整理，不是官方逐字稿，用語和數字可能有誤，時間點也可能差幾十秒，請以影片為準。本頁只整理兩人各自的說法，沒有查證，也不代表任何立場。兩場影片：
+<a href="https://www.youtube.com/watch?v=YaVL0TORCvc" target="_blank" rel="noopener">第一場</a>、
+<a href="https://www.youtube.com/watch?v=BSlAI8Ihj_A" target="_blank" rel="noopener">第二場</a>。</div>
+
+<nav aria-label="話題"><a href="#wushantou">烏山頭水庫光電板</a><a href="#elder">長者福利</a><a href="#allowance">成長津貼與 AI 紅利</a><a href="#housing">少子化與居住</a><a href="#traffic">交通與科技執法</a><a href="#integrity">廉政與弊案</a><a href="#flood">防汛與排水</a><a href="#industry">產業科技與招商</a></nav>
+
+
+<section id="wushantou">
+  <h2>烏山頭水庫光電板</h2>
+  <p class="lead">兩人都把水源安全放在前面。謝龍介主打一年內處理並自願被罷免；陳亭妃強調依合約到期不續約、成立監督小組，並走合法程序。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>以飲用與灌溉用水安全為訴求，指出約 180 多萬市民倚賴烏山頭水庫的水。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2630s" target="_blank" rel="noopener"><span>第一場</span>43:53</a></div></li><li><p>承諾上任後處理水庫內的太陽能板，做不到願意被罷免（以「一年」為期，原話辨識不清，請以影片為準）。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2648s" target="_blank" rel="noopener"><span>第一場</span>44:11</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2772s" target="_blank" rel="noopener"><span>第二場</span>46:15</a></div></li><li><p>批評陳亭妃主張等到民國 121 年合約到期才處理。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2792s" target="_blank" rel="noopener"><span>第二場</span>46:35</a></div></li><li><p>質疑陳亭妃擔任立委 18 年，當初為什麼沒有表態。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2914s" target="_blank" rel="noopener"><span>第二場</span>48:37</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>表示去年 10 月在立法院質詢經濟部、農業部，提出四項主張：水庫不再核發光電執照；既有光電板於民國 121 年 4 月 23 日到期不續約；水質資料公開透明；清洗光電板須公開並邀在地民眾參與。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4033s" target="_blank" rel="noopener"><span>第一場</span>67:16</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1411s" target="_blank" rel="noopener"><span>第二場</span>23:34</a></div></li><li><p>說明板子的來歷：據她展示的看板，水庫由農業部嘉南農田水利署管理，2017 年起設置，2022 年 5 月 23 日併網發電。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3972s" target="_blank" rel="noopener"><span>第一場</span>66:15</a></div></li><li><p>談到拆除：必須有合法依據，不能直接要求拆除；強調到期不續約並強力控管。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4194s" target="_blank" rel="noopener"><span>第一場</span>69:57</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4235s" target="_blank" rel="noopener"><span>第一場</span>70:38</a></div></li><li><p>承諾成立納入公民團體的監督小組監測水質，發現不合格或程序不透明，就要求停止光電板運作。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1470s" target="_blank" rel="noopener"><span>第二場</span>24:33</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1530s" target="_blank" rel="noopener"><span>第二場</span>25:33</a></div></li></ul></article>
+  </div>
+</section>
+<section id="elder">
+  <h2>長者福利</h2>
+  <p class="lead">謝龍介提出具體金額與項目；陳亭妃以「比照六都第一名」為標準，補齊台南落後的部分。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>65 歲以上長者健保費由市府負擔，而且不排富（他說每月可省約 826 元）。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1827s" target="_blank" rel="noopener"><span>第一場</span>30:30</a></div></li><li><p>重陽禮金加碼 3,000 元，敬老卡自明年 1 月起每月 1,000 元（比照台中）。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1868s" target="_blank" rel="noopener"><span>第一場</span>31:11</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1891s" target="_blank" rel="noopener"><span>第一場</span>31:34</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3191s" target="_blank" rel="noopener"><span>第二場</span>53:14</a></div></li><li><p>敬老卡可用於搭乘大眾運輸，並到農會購買農產品等。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1891s" target="_blank" rel="noopener"><span>第一場</span>31:34</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>福利政策以六都第一名為標準：凡台南落後其他五都之處，上任後（12 月 25 日）逐步補齊，涵蓋長輩、孩童、青少年、婦女與勞工。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3756s" target="_blank" rel="noopener"><span>第一場</span>62:39</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1930s" target="_blank" rel="noopener"><span>第二場</span>32:13</a></div></li><li><p>敬老卡將改稱「尊榮卡」，重陽禮金與卡片福利比照六都最高標準。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3813s" target="_blank" rel="noopener"><span>第一場</span>63:36</a></div></li></ul></article>
+  </div>
+</section>
+<section id="allowance">
+  <h2>成長津貼與 AI 紅利</h2>
+  <p class="lead">兩人談的是同一批現金政策，但各自說明來歷：謝龍介說是他先提出；陳亭妃說已編入行政院預算，卡在立法院。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>主張 0 到 18 歲每月 5,000 元成長津貼，並說這是他先提出的政見，之後中央才擴大到全國。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1929s" target="_blank" rel="noopener"><span>第一場</span>32:12</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3211s" target="_blank" rel="noopener"><span>第二場</span>53:34</a></div></li><li><p>他說陳亭妃今年 4 月曾在黨內會議上不贊同這項政見（他的說法，本頁未查證）。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1929s" target="_blank" rel="noopener"><span>第一場</span>32:12</a></div></li><li><p>6 到 18 歲在中央補助之外再加碼 2,500 元，合計每月 7,500 元。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2007s" target="_blank" rel="noopener"><span>第一場</span>33:30</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3250s" target="_blank" rel="noopener"><span>第二場</span>54:13</a></div></li><li><p>談到經濟成長帶來的稅收，主張紅利應全民共享，並指陳亭妃在立法院相關表決時未到場（他的說法，本頁未查證）。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3450s" target="_blank" rel="noopener"><span>第二場</span>57:33</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3511s" target="_blank" rel="noopener"><span>第二場</span>58:34</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>2027 年共享 AI 紅利，每人普發 1 萬元；2027 年起 0 到 18 歲每人每月 5,000 元成長津貼，均已編入行政院預算。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3895s" target="_blank" rel="noopener"><span>第一場</span>64:58</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2429s" target="_blank" rel="noopener"><span>第二場</span>40:32</a></div></li><li><p>呼籲立法院在野黨 12 月底前通過，全國民眾明年 1 月就能領。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3895s" target="_blank" rel="noopener"><span>第一場</span>64:58</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2469s" target="_blank" rel="noopener"><span>第二場</span>41:12</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2529s" target="_blank" rel="noopener"><span>第二場</span>42:12</a></div></li><li><p>指出預算法規定民意代表不能增加預算，批評在野黨提案會延誤發放。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3875s" target="_blank" rel="noopener"><span>第一場</span>64:38</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2509s" target="_blank" rel="noopener"><span>第二場</span>41:52</a></div></li></ul></article>
+  </div>
+</section>
+<section id="housing">
+  <h2>少子化與居住</h2>
+  <p class="lead">謝龍介用「生育宅」把購屋和生育綁在一起；陳亭妃以社會住宅、租金與貸款利息補貼，租屋與購屋並行。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>以出生人口下滑說明少子化危機，主張市長要照顧老人，也要照顧孩子。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1733s" target="_blank" rel="noopener"><span>第一場</span>28:56</a></div></li><li><p>提出「生育宅」（逐字稿辨識為「分育宅」，依內容判斷為生育宅）：生 1 胎給兩房、2 胎給三房、3 胎給四房。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2188s" target="_blank" rel="noopener"><span>第一場</span>36:31</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2209s" target="_blank" rel="noopener"><span>第一場</span>36:52</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3271s" target="_blank" rel="noopener"><span>第二場</span>54:34</a></div></li><li><p>以家庭年所得約 5 倍作為「可負擔」房價（他舉台南家庭年所得約 131 萬元，對應約 650 萬元上限），土地由市府提供，不可轉賣。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2148s" target="_blank" rel="noopener"><span>第一場</span>35:51</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2290s" target="_blank" rel="noopener"><span>第一場</span>38:13</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2308s" target="_blank" rel="noopener"><span>第一場</span>38:31</a></div></li><li><p>他說買比租划算：兩房每月貸款約 1.3 萬元，租金則要 1.8 萬到 2.1 萬元。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3291s" target="_blank" rel="noopener"><span>第二場</span>54:54</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3310s" target="_blank" rel="noopener"><span>第二場</span>55:13</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>把少子化視為國安問題，主張打造安全的育兒環境。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1989s" target="_blank" rel="noopener"><span>第二場</span>33:12</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2229s" target="_blank" rel="noopener"><span>第二場</span>37:12</a></div></li><li><p>社會住宅：中央與地方合計預計超過 1.3 萬戶，民國 116 到 119 年陸續到位，涵蓋新營、東區、安南、安平、安定、仁德、新市、永康等地。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2012s" target="_blank" rel="noopener"><span>第二場</span>33:35</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2093s" target="_blank" rel="noopener"><span>第二場</span>34:56</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2113s" target="_blank" rel="noopener"><span>第二場</span>35:16</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2130s" target="_blank" rel="noopener"><span>第二場</span>35:33</a></div></li><li><p>資格看家戶所得與是否為 65 歲以上長者；以租為主，搭配新青安 3.0 貸款（最長 40 年）。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2070s" target="_blank" rel="noopener"><span>第二場</span>34:33</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2189s" target="_blank" rel="noopener"><span>第二場</span>36:32</a></div></li><li><p>家中有學齡前兒童的住戶，社宅租期可延長，最長到 12 年，並補貼租金或貸款利息。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2149s" target="_blank" rel="noopener"><span>第二場</span>35:52</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2170s" target="_blank" rel="noopener"><span>第二場</span>36:13</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2249s" target="_blank" rel="noopener"><span>第二場</span>37:32</a></div></li></ul></article>
+  </div>
+</section>
+<section id="traffic">
+  <h2>交通與科技執法</h2>
+  <p class="lead">兩人都質疑科技執法的成效。謝龍介聚焦罰單與路面人孔蓋；陳亭妃提出跨局處委員會與軌道建設。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>批評科技執法：他說台南設有 192 處、一年開出約 154 萬張罰單、罰款約 21 億元（數字依逐字稿辨識，請以影片為準），主張檢討只開罰單的做法。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3330s" target="_blank" rel="noopener"><span>第二場</span>55:33</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3353s" target="_blank" rel="noopener"><span>第二場</span>55:56</a></div></li><li><p>路面人孔蓋不平整會讓騎士跌倒，要求電力、電信、自來水、瓦斯等公司負責處理，並說全市約有 230 萬顆。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2447s" target="_blank" rel="noopener"><span>第一場</span>40:50</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2489s" target="_blank" rel="noopener"><span>第一場</span>41:32</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3391s" target="_blank" rel="noopener"><span>第二場</span>56:34</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>她說科技執法並沒有減少交通事故，要重新檢討；另提到號誌一致化與人本人行道。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4352s" target="_blank" rel="noopener"><span>第一場</span>72:35</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4373s" target="_blank" rel="noopener"><span>第一場</span>72:56</a></div></li><li><p>成立跨局處的交通委員會，由她擔任召集人；並整合自來水、台電、中華電信的管線共構。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4352s" target="_blank" rel="noopener"><span>第一場</span>72:35</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4394s" target="_blank" rel="noopener"><span>第一場</span>73:17</a></div></li><li><p>軌道與自行車：永康鐵路地下化第二階段，新市、善化立體化，自行車道串聯，糖鐵五分車。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2293s" target="_blank" rel="noopener"><span>第二場</span>38:16</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2311s" target="_blank" rel="noopener"><span>第二場</span>38:34</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2331s" target="_blank" rel="noopener"><span>第二場</span>38:54</a></div></li><li><p>捷運藍線延伸到高鐵，紅線串聯高雄機場捷運（半環狀），要加快完成。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2371s" target="_blank" rel="noopener"><span>第二場</span>39:34</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2389s" target="_blank" rel="noopener"><span>第二場</span>39:52</a></div></li></ul></article>
+  </div>
+</section>
+<section id="integrity">
+  <h2>廉政與弊案</h2>
+  <p class="lead">謝龍介訴求政黨輪替與獎金檢舉；陳亭妃宣示把工程招標全部納入中央的廉政平台。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>指民進黨連續執政 33 年，出現官商勾結與局處貪腐；他認為沒有換黨就清不乾淨。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=1667s" target="_blank" rel="noopener"><span>第一場</span>27:50</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2688s" target="_blank" rel="noopener"><span>第一場</span>44:51</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=2710s" target="_blank" rel="noopener"><span>第二場</span>45:13</a></div></li><li><p>承諾只做一任 4 年、不連任。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2688s" target="_blank" rel="noopener"><span>第一場</span>44:51</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3771s" target="_blank" rel="noopener"><span>第二場</span>62:54</a></div></li><li><p>把全部選舉補助款拿來當檢舉官商勾結的獎金，每案最高 100 萬元。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3572s" target="_blank" rel="noopener"><span>第二場</span>59:35</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3590s" target="_blank" rel="noopener"><span>第二場</span>59:53</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>宣示市府大小工程招標，不論價格標或最有利標，全部進入法務部「機關採購廉政平台」，由中央直接監控。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4492s" target="_blank" rel="noopener"><span>第一場</span>74:55</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4514s" target="_blank" rel="noopener"><span>第一場</span>75:17</a></div></li><li><p>提到相關弊案已由檢調查辦，表示尊重司法。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4475s" target="_blank" rel="noopener"><span>第一場</span>74:38</a></div></li></ul></article>
+  </div>
+</section>
+<section id="flood">
+  <h2>防汛與排水</h2>
+  <p class="lead">陳亭妃提出較具體的時程與做法；謝龍介只簡短提到水溝要通，細節辨識不清。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>強調排水溝要通，並提到台南的水溝長度很長，執行人力不足（細節辨識不清，請以影片為準）。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2429s" target="_blank" rel="noopener"><span>第一場</span>40:32</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>成立災害預演中心，整合中央、地方與民間的資料。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4413s" target="_blank" rel="noopener"><span>第一場</span>73:36</a></div></li><li><p>4 月前把所有水溝清理乾淨，橋涵、箱涵完成檢測，抽水機與調度提前就位。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4434s" target="_blank" rel="noopener"><span>第一場</span>73:57</a><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=4452s" target="_blank" rel="noopener"><span>第一場</span>74:15</a></div></li></ul></article>
+  </div>
+</section>
+<section id="industry">
+  <h2>產業科技與招商</h2>
+  <p class="lead">兩人都想把高科技產業留在台南，做法不同：謝龍介談招商流程與「馬上辦」，陳亭妃談產業分工與南科擴充。</p>
+  <div class="pair">
+    <article class="who xie"><h3><i></i>謝龍介</h3><ul><li><p>談到台積電、輝達要來設廠，市府要設單一窗口，讓企業快速通關。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2731s" target="_blank" rel="noopener"><span>第一場</span>45:34</a></div></li><li><p>效法「馬上辦」中心：局處首長晚上 9 點到 11 點輪流面對市民，立即處理。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=2747s" target="_blank" rel="noopener"><span>第一場</span>45:50</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=3652s" target="_blank" rel="noopener"><span>第二場</span>60:55</a></div></li></ul></article>
+    <article class="who chen"><h3><i></i>陳亭妃</h3><ul><li><p>「科技三軸」：農業科技、AI 半導體科技、醫療科技；規劃南科 1、2、3 與南科 4。</p><div class="chips"><a class="chip s1" href="https://www.youtube.com/watch?v=YaVL0TORCvc&t=3713s" target="_blank" rel="noopener"><span>第一場</span>61:56</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1709s" target="_blank" rel="noopener"><span>第二場</span>28:32</a><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1729s" target="_blank" rel="noopener"><span>第二場</span>28:52</a></div></li><li><p>偏鄉醫療結合 AI，並宣布捐出 30% 選舉補助款，供市府成立偏鄉教育與偏鄉醫療科技。</p><div class="chips"><a class="chip s2" href="https://www.youtube.com/watch?v=BSlAI8Ihj_A&t=1749s" target="_blank" rel="noopener"><span>第二場</span>29:12</a></div></li></ul></article>
+  </div>
+</section>
+
+<footer>資料來源：臺南市第 5 屆市長選舉公辦電視政見發表會第一場、第二場（YouTube 直播存檔）。整理方式：只取兩位候選人各自的發言區段，再依話題對照。</footer>
+</div>
+</body>
+</html>
